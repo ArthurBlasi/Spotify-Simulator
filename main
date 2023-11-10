@@ -1,0 +1,15 @@
+public class Main {
+    public static void main(String[] args) {
+        
+        BancoDeMusicas b1 = new BancoDeMusicas();
+        
+        String[] bdm = b1.bdmcreator();
+        
+        for(int i = 0; i < bdm.length; i++) {
+            
+            System.out.println(bdm[i]);
+            
+        }
+        
+    }
+}
