@@ -1,0 +1,57 @@
+import java.util.*;
+
+public class Playlist {
+    
+    Scanner leitor = new Scanner(System.in);
+    
+    BancoDeMusicas banco = new BancoDeMusicas();
+    String bancoM[] = banco.bdmcreator();
+    
+    private String nome;
+    private List<Musica> musicas;
+
+    // Construtor
+    public Playlist(String nome) {
+        this.nome = nome;
+        this.musicas = new ArrayList<>();
+    }
+
+    // Adicionar música a playlist
+    public void adicionarMusica(Musica musica) {
+        musicas.add(musica);
+    }
+
+    // Obter todas as músicas da playlist
+    public List<Musica> getMusicas() {
+        return musicas;
+    }
+
+    // Obter o nome da playlist
+    public String getNome() {
+        return nome;
+    }
+
+    public List<Playlist> bdmcreator1(String name) {
+        List<Playlist> playlists = new ArrayList<>();
+
+        // Criação de albuns e associação de músicas
+        Playlist p1 = new Playlist(name);
+        System.out.println("Insert the desired songs");
+        System.out.println("(Type 'stop' to close)");
+        for(int i = 0; i < 100; i++) {
+            String musica = leitor.next();
+            if(musica.equalsIgnoreCase("stop")) {
+                break;
+            }
+            for(int j = 0; j < 100; j++) {
+                if(musica.equalsIgnoreCase(bancoM[j])) {
+                    p1.adicionarMusica(new Musica(musica));
+                }
+            }
+        }
+        playlists.add(p1);
+        
+        return playlists;
+    }
+    
+}
