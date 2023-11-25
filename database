@@ -34,7 +34,7 @@ public class BancoDeMusicas {
         bdm[27] = "Payphone";
         bdm[28] = "Circles";
         bdm[29] = "Halo";
-        bdm[30] = "Save Yout Tears";
+        bdm[30] = "Save Your Tears";
         bdm[31] = "Die For You";
         bdm[32] = "Flowers";
         bdm[33] = "Senorita";
