@@ -64,6 +64,7 @@ public class Artista {
         bMars.adicionarMusica(new Musica("Love's Train"));
         bMars.adicionarMusica(new Musica("Put On A Smile"));
         bMars.adicionarMusica(new Musica("Silk Sonic Intro"));
+        bMars.adicionarMusica(new Musica("Smokin Out The Window"));
         bMars.adicionarMusica(new Musica("Skate"));
         bMars.adicionarMusica(new Musica("The Lazy Song"));
         bMars.adicionarMusica(new Musica("When I Was Your Man"));
