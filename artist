@@ -1,0 +1,214 @@
+public class Artista {
+    
+    BancoDeMusicas banco = new BancoDeMusicas();
+    String musicas[] = banco.bdmcreator();
+    
+    private String nome;
+    private List<Musica> musicas;
+
+    // Construtor
+    public Artista(String nome) {
+        this.nome = nome;
+        this.musicas = new ArrayList<>();
+    }
+
+    // Adicionar música ao artista
+    public void adicionarMusica(Musica musica) {
+        musicas.add(musica);
+    }
+
+    // Obter todas as músicas do artista
+    public List<Musica> getMusicas() {
+        return musicas;
+    }
+
+    // Obter o nome do artista
+    public String getNome() {
+        return nome;
+    }
+
+    public List<Artista> bdmcreator1() {
+        List<Artista> artistas = new ArrayList<>();
+
+        // Criação de artistas e associação de músicas
+        Artista travis = new Artista("Travis Scott");
+        travis.adicionarMusica(new Musica("AstroThunder"));
+        travis.adicionarMusica(new Musica("Butterfly Effect"));
+        travis.adicionarMusica(new Musica("Can't Say"));
+        travis.adicionarMusica(new Musica("Carousel"));
+        travis.adicionarMusica(new Musica("Coffee Bean"));
+        travis.adicionarMusica(new Musica("Houstonfornication"));
+        travis.adicionarMusica(new Musica("NC-17"));
+        travis.adicionarMusica(new Musica("No Bystanders"));
+        travis.adicionarMusica(new Musica("R.I.P. Screw"));
+        travis.adicionarMusica(new Musica("Stargazing"));
+        travis.adicionarMusica(new Musica("Skeletons"));
+        travis.adicionarMusica(new Musica("Sicko Mode"));
+        travis.adicionarMusica(new Musica("Stop Trying To Be God"));
+        travis.adicionarMusica(new Musica("Wake Up"));
+        travis.adicionarMusica(new Musica("Who? What!"));
+        travis.adicionarMusica(new Musica("Yosemite"));
+        travis.adicionarMusica(new Musica("5% Tint"));
+        artistas.add(travis);
+
+        Artista bMars = new Artista("Bruno Mars");
+        bMars.adicionarMusica(new Musica("After last Night"));
+        bMars.adicionarMusica(new Musica("Billionaire"));
+        bMars.adicionarMusica(new Musica("Blast Off"));
+        bMars.adicionarMusica(new Musica("Count on Me"));
+        bMars.adicionarMusica(new Musica("Fly As Me"));
+        bMars.adicionarMusica(new Musica("Leave The Door Open"));
+        bMars.adicionarMusica(new Musica("Locked out of Heaven"));
+        bMars.adicionarMusica(new Musica("Love's Train"));
+        bMars.adicionarMusica(new Musica("Put On A Smile"));
+        bMars.adicionarMusica(new Musica("Silk Sonic Intro"));
+        bMars.adicionarMusica(new Musica("Skate"));
+        bMars.adicionarMusica(new Musica("The Lazy Song"));
+        bMars.adicionarMusica(new Musica("When I Was Your Man"));
+        bMars.adicionarMusica(new Musica("777"));
+        artistas.add(bMars);
+        
+        Artista cold = new Artista("Coldplay");
+        cold.adicionarMusica(new Musica("Don't Panic"));
+        cold.adicionarMusica(new Musica("Everything's Not Lost"));
+        cold.adicionarMusica(new Musica("High Speed"));
+        cold.adicionarMusica(new Musica("Parachutes"));
+        cold.adicionarMusica(new Musica("Paradise"));
+        cold.adicionarMusica(new Musica("Shiver"));
+        cold.adicionarMusica(new Musica("Sparks"));
+        cold.adicionarMusica(new Musica("Spies"));
+        cold.adicionarMusica(new Musica("The Scientist"));
+        cold.adicionarMusica(new Musica("Trouble"));
+        cold.adicionarMusica(new Musica("Viva La Vida"));
+        cold.adicionarMusica(new Musica("We Never Change"));
+        cold.adicionarMusica(new Musica("Yellow"));
+        artistas.add(cold);
+        
+        Artista kend = new Artista("Kendrick Lamar");
+        kend.adicionarMusica(new Musica("Blood"));
+        kend.adicionarMusica(new Musica("DNA"));
+        kend.adicionarMusica(new Musica("Duckworth"));
+        kend.adicionarMusica(new Musica("Element"));
+        kend.adicionarMusica(new Musica("Fear"));
+        kend.adicionarMusica(new Musica("Feel"));
+        kend.adicionarMusica(new Musica("God"));
+        kend.adicionarMusica(new Musica("Humble"));
+        kend.adicionarMusica(new Musica("Love"));
+        kend.adicionarMusica(new Musica("Loyalty"));
+        kend.adicionarMusica(new Musica("Lust"));
+        kend.adicionarMusica(new Musica("Pride"));
+        kend.adicionarMusica(new Musica("XXX"));
+        kend.adicionarMusica(new Musica("Yah"));
+        artistas.add(kend);
+        
+        Artista avicii = new Artista("Avicii");
+        avicii.adicionarMusica(new Musica("Hey Brother"));
+        avicii.adicionarMusica(new Musica("The Nights"));
+        avicii.adicionarMusica(new Musica("Waiting For Love"));
+        avicii.adicionarMusica(new Musica("Wake Me Up"));
+        artistas.add(avicii);
+        
+        Artista want = new Artista("The Wanted");
+        want.adicionarMusica(new Musica("Glad You Came"));
+        artistas.add(want);
+        
+        Artista maroon = new Artista("Maroon 5");
+        maroon.adicionarMusica(new Musica("Animals"));
+        maroon.adicionarMusica(new Musica("Girls Like You"));
+        maroon.adicionarMusica(new Musica("Payphone"));
+        maroon.adicionarMusica(new Musica("Sugar"));
+        artistas.add(maroon);
+        
+        Artista imag = new Artista("Imagine Dragons");
+        imag.adicionarMusica(new Musica("Believer"));
+        imag.adicionarMusica(new Musica("Demons"));
+        imag.adicionarMusica(new Musica("Sweather Weather"));
+        artistas.add(imag);
+        
+        Artista sean = new Artista("Sean Kignston");
+        sean.adicionarMusica(new Musica("Beautiful Girls"));
+        artistas.add(sean);
+        
+        Artista one = new Artista("One Republic");
+        one.adicionarMusica(new Musica("Counting Stars"));
+        artistas.add(one);
+        
+        Artista john = new Artista("John Legend");
+        john.adicionarMusica(new Musica("All Of Me"));
+        artistas.add(john);
+        
+        Artista trev = new Artista("Trevor Daniel");
+        trev.adicionarMusica(new Musica("Falling"));
+        artistas.add(trev);
+        
+        Artista adele = new Artista("Adele");
+        adele.adicionarMusica(new Musica("Rolling in the Deep"));
+        artistas.add(adele);
+        
+        Artista post = new Artista("Post Malone");
+        post.adicionarMusica(new Musica("Better Now"));
+        post.adicionarMusica(new Musica("Chemical"));
+        post.adicionarMusica(new Musica("Circles"));
+        post.adicionarMusica(new Musica("Congratulations"));
+        post.adicionarMusica(new Musica("Hollywood's Bleeding"));
+        post.adicionarMusica(new Musica("Rockstar"));
+        post.adicionarMusica(new Musica("Sunflower"));
+        artistas.add(post);
+        
+        Artista bey = new Artista("Beyonce");
+        bey.adicionarMusica(new Musica("Halo"));
+        artistas.add(bey);
+        
+        Artista week = new Artista("The Weeknd");
+        week.adicionarMusica(new Musica("Die For You"));
+        week.adicionarMusica(new Musica("Save Your Tears"));
+        artistas.add(week);
+        
+        Artista miley = new Artista("Miley Cyrus");
+        miley.adicionarMusica(new Musica("Flowers"));
+        artistas.add(miley);
+        
+        Artista cami = new Artista("Camila Cabello");
+        cami.adicionarMusica(new Musica("Havana"));
+        cami.adicionarMusica(new Musica("Senorita"));
+        artistas.add(cami);
+        
+        Artista katy = new Artista("Katy Perry");
+        katy.adicionarMusica(new Musica("Firework"));
+        artistas.add(katy);
+        
+        Artista melly = new Artista("NWE Melly");
+        melly.adicionarMusica(new Musica("Murder On My Mind"));
+        artistas.add(melly);
+        
+        Artista tyler = new Artista("Tyler The Creator");
+        tyler.adicionarMusica(new Musica("See You Again"));
+        artistas.add(tyler);
+        
+        Artista kanye = new Artista("Kanye West");
+        kanye.adicionarMusica(new Musica("Heartless"));
+        artistas.add(kanye);
+        
+        Artista cent = new Artista("Central Cee");
+        cent.adicionarMusica(new Musica("Chapters"));
+        cent.adicionarMusica(new Musica("Let Go"));
+        artistas.add(cent);
+        
+        Artista em = new Artista("Eminem");
+        em.adicionarMusica(new Musica("Lose Yourself"));
+        em.adicionarMusica(new Musica("Never Love Again"));
+        artistas.add(em);
+        
+        Artista xxx = new Artista("XXXTentacion");
+        xxx.adicionarMusica(new Musica("Changes"));
+        xxx.adicionarMusica(new Musica("Hope"));
+        xxx.adicionarMusica(new Musica("Moonlight"));
+        artistas.add(xxx);
+        
+        Artista rod = new Artista("Roddy Rich");
+        rod.adicionarMusica(new Musica("Ballin"));
+        artistas.add(rod);
+        
+        return artistas;
+    }
+}
