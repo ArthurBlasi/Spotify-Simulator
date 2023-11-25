@@ -1,7 +1,9 @@
+import java.util.*;
+
 public class Artista {
     
     BancoDeMusicas banco = new BancoDeMusicas();
-    String musicas[] = banco.bdmcreator();
+    String musica[] = banco.bdmcreator();
     
     private String nome;
     private List<Musica> musicas;
