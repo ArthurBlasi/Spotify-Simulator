@@ -9,7 +9,7 @@ public class Playlists {
     
     public String[] likedsongs() {
         
-        String[] ls = new String[100];
+        String[] ls = new String[25];
         
         for(int i = 0; i < 25; i++) {
             ls[i] = bancoM[i];
@@ -27,7 +27,7 @@ public class Playlists {
         System.out.println("(Type 'stop' to close)");
         
         for(int i = 0; i < 100; i++) {
-            String musica = leitor.next();
+            String musica = leitor.nextLine();
             if(musica.equalsIgnoreCase("stop")) {
                 break;
             }
