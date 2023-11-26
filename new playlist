@@ -22,7 +22,7 @@ public class Playlists {
         
         String[] mp = new String[100];
         
-        System.out.println("Your playlist was created!");
+        System.out.println("\fYour playlist was created!");
         System.out.println("Insert the desired songs");
         System.out.println("(Type 'stop' to close)");
         
@@ -38,6 +38,9 @@ public class Playlists {
             }
         }
         
+        System.out.println("Creation completed.");
+        
         return mp;
     }
+    
 }
