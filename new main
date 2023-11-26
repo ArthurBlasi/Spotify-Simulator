@@ -17,296 +17,842 @@ public class Main {
         Artist all = new Artist();
         String[] lista = all.artlist();
         
+        String[] travis = all.travisScott();
+        String[] brunoMars = all.brunoMars();
+        String[] coldplay = all.coldplay();
+        String[] kendrickLamar = all.kendrickLamar();
+        String[] avicii = all.avicii();
+        String[] theWanted = all.theWanted();
+        String[] maroon5 = all.maroon5();
+        String[] imagineDragons = all.imagineDragons();
+        String[] seanKingston = all.seanKingston();
+        String[] oneRepublic = all.oneRepublic();
+        String[] johnLegend = all.johnLegend();
+        String[] trevorDaniel = all.trevorDaniel();
+        String[] adele = all.adele();
+        String[] postMalone = all.postMalone();
+        String[] beyonce = all.beyonce();
+        String[] theWeeknd = all.theWeeknd();
+        String[] mileyCyrus = all.mileyCyrus();
+        String[] camilaCabello = all.camilaCabello();
+        String[] katyPerry = all.katyPerry();
+        String[] nweMelly = all.nweMelly();
+        String[] tylerTheCreator = all.tylerTheCreator();
+        String[] kanyeWest = all.kanyeWest();
+        String[] centralCee = all.centralCee();
+        String[] eminem = all.eminem();
+        String[] xxxtentacion = all.xxxtentacion();
+        String[] roddyRich = all.roddyRich();
+
         Playlists playlist = new Playlists();
         String[] likedsongs = playlist.likedsongs();
         String[] myplay = new String[100];
         
-        int opcao;
+        Music player = new Music();
+        
+        int opcao = 0;
         String pesq;
-                                
-        System.out.println(""" 
-        \f
-        =====================
-          Spotify-Simulator
-        ---------------------
-        [     1. Search     ]
-        [   2. My Library   ]
-        [     3. Close      ]
-        =====================
-        ---------------------
-              HOMEPAGE
-        =====================
-        =====================
-        """);
         
-        opcao = leitor.nextInt();
+        while(opcao != 3) {
+            
+            System.out.println(""" 
+            \f
+            =====================
+              Spotify-Simulator
+            ---------------------
+            [     1. Search     ]
+            [   2. My Library   ]
+            [     3. Close      ]
+            =====================
+            ---------------------
+                  HOMEPAGE
+            =====================
+            =====================
+            """);
         
+            opcao = leitor.nextInt();
         
-        switch(opcao) {
-            case 1:
-                System.out.println(""" 
-                \f
-                =====================
-                  Spotify-Simulator
-                ---------------------
-                [     1. Songs      ]
-                [     2. Albums     ]
-                [     3. Artists    ]
-                =====================
-                ---------------------
-                      SEARCH
-                =====================
-                =====================
-                """);
-                opcao = leitor.nextInt();
-                switch(opcao) {
-                    case 1:
-                        System.out.print("\fType it: ");
-                        pesq = leitor.next();
-                        int y = 0;
-                        for(int i = 0; i < song.length; i++) {
-                            if(pesq.equalsIgnoreCase(song[i])) {
-                                y++;
-                                System.out.println("Now playing " + song[i]);
-                            }
-                        }
-                        if(y == 0) {
-                        System.out.println("Sorry, Spotify is not connected to the Internert.");   
-                        }
-                        break;
-                    case 2:
-                        System.out.print("\fType it: ");
-                        pesq = leitor.next();
-                        if(pesq.equalsIgnoreCase("An Evening")) {
-                            int x = 0;
-                            System.out.println("Now playing " + bm[x]);
-                        } else if(pesq.equalsIgnoreCase("Parachutes")) {
-                            int x = 0;
-                            System.out.println("Now playing " + cp[x]);
-                        } else if(pesq.equalsIgnoreCase("Astroworld")) {
-                            int x = 0;
-                            System.out.println("Now playing " + ts[x]);
-                        } else if(pesq.equalsIgnoreCase("Damn")) {
-                            int x = 0;
-                            System.out.println("Now playing " + kl[x]);
-                        } else {
-                            System.out.println("Sorry, Spotify is not connected to the Internert.");
-                                break;
-                        }
-                        break;
-                    case 3:
-                        System.out.print("\fType it: ");
-                        pesq = leitor.next();
-                        int z = 0;
-                        for(int i = 0; i < lista.length; i++) {
-                            if(pesq.equalsIgnoreCase(lista[i])) {
-                                z++;
-                                System.out.println("test");
-                            }
-                        }
-                        if(z == 0) {
-                            System.out.println("Sorry, Spotify is not connected to the Internert.");
-                        }
-                        break;
-                }
-                break;
-            case 2:
-                System.out.println(""" 
-                \f
-                =====================
-                  Spotify-Simulator
-                ---------------------
-                [     1. Songs      ]
-                [     2. Albums     ]
-                [    3. Playlists   ]
-                =====================
-                ---------------------
-                     MY LIBRARY
-                =====================
-                =====================
-                """);
-                opcao = leitor.nextInt();
-                switch(opcao) {
-                    case 1:
-                        for(int i = 0; i < song.length; i++) {
-                            System.out.println(song[i]);
-                        }
-                        System.out.println(""" 
-                        
-                        =====================
-                          Spotify-Simulator
-                        ---------------------
-                        [      1. Play      ]
-                        [     2. Return     ]
-                        [         -         ]
-                        =====================
-                        ---------------------
-                             MY LIBRARY
-                        =====================
-                        =====================
-                        """);
-                        opcao = leitor.nextInt();
-                        switch(opcao) {
-                            case 1:
-                                for(int i = 0; i < song.length; i++) {
-                                System.out.println(song[i]);
+            switch(opcao) {
+                case 1:
+                    System.out.println(""" 
+                    \f
+                    =====================
+                      Spotify-Simulator
+                    ---------------------
+                    [     1. Songs      ]
+                    [     2. Albums     ]
+                    [     3. Artists    ]
+                    =====================
+                    ---------------------
+                           SEARCH
+                    =====================
+                    =====================
+                      """);
+                    opcao = leitor.nextInt();
+                    switch(opcao) {
+                        case 1:
+                            System.out.print("\fType it: ");
+                            leitor.nextLine();
+                            pesq = leitor.nextLine();
+                            int y = 0;
+                            for(int i = 0; i < song.length; i++) {
+                                if(pesq.equalsIgnoreCase(song[i])) {
+                                    y++;
+                                    player.reprodutor(song, i);
                                 }
-                                System.out.println("Which one?");
-                                pesq = leitor.next();
-                                int y = 0;
-                                for(int i = 0; i < song.length; i++) {
-                                    if(pesq.equalsIgnoreCase(song[i])) {
-                                        y++;
-                                        System.out.println("Now playing " + song[i]);
+                            }
+                            if(y == 0) {
+                            System.out.println("Sorry, Spotify is not connected to the Internet.");   
+                            }
+                            break;
+                        case 2:
+                            System.out.print("\fType it: ");
+                            leitor.nextLine();
+                            pesq = leitor.nextLine();
+                            if(pesq.equalsIgnoreCase("An Evening")) {
+                                int x = 0;
+                                player.reprodutor(bm, x);
+                            } else if(pesq.equalsIgnoreCase("Parachutes")) {
+                                int x = 0;
+                                player.reprodutor(cp, x);
+                            } else if(pesq.equalsIgnoreCase("Astroworld")) {
+                                int x = 0;
+                                player.reprodutor(ts, x);
+                            } else if(pesq.equalsIgnoreCase("Damn")) {
+                                int x = 0;
+                                player.reprodutor(kl, x);
+                            } else {
+                                System.out.println("Sorry, Spotify is not connected to the Internet.");
+                                    break;
+                            }
+                            break;
+                        case 3:
+                            System.out.print("\fType it: ");
+                            leitor.nextLine();
+                            pesq = leitor.nextLine();
+                            int z = 0;
+                            for(int i = 0; i < lista.length; i++) {
+                                if(pesq.equalsIgnoreCase(lista[i])) {
+                                    z++;
+                                    switch(i) {
+                                        case 0:
+                                            for(int j = 0; j < travis.length; j++) {
+                                                System.out.println(travis[j]);
+                                                }
+                                            System.out.println(""" 
+                        
+                                            =====================
+                                              Spotify-Simulator
+                                            ---------------------
+                                            [      1. Play      ]
+                                            [     2. Return     ]
+                                            [         -         ]
+                                            =====================
+                                            ---------------------
+                                                TRAVIS SCOTT
+                                            =====================
+                                            =====================
+                                            """);
+                                            player.reprodutorArtista(travis);
+                                            break;
+                                        case 1:
+                                            for(int j = 0; j < brunoMars.length; j++) {
+                                                System.out.println(brunoMars[j]);
+                                                }
+                                            System.out.println(""" 
+                        
+                                            =====================
+                                              Spotify-Simulator
+                                            ---------------------
+                                            [      1. Play      ]
+                                            [     2. Return     ]
+                                            [         -         ]
+                                            =====================
+                                            ---------------------
+                                                 BRUNO MARS
+                                            =====================
+                                            =====================
+                                            """);
+                                            player.reprodutorArtista(brunoMars);
+                                            break;
+                                        case 2:
+                                            for(int j = 0; j < coldplay.length; j++) {
+                                                System.out.println(coldplay[j]);
+                                                }
+                                            System.out.println(""" 
+                        
+                                            =====================
+                                              Spotify-Simulator
+                                            ---------------------
+                                            [      1. Play      ]
+                                            [     2. Return     ]
+                                            [         -         ]
+                                            =====================
+                                            ---------------------
+                                                  COLDPLAY
+                                            =====================
+                                            =====================
+                                            """);
+                                            player.reprodutorArtista(coldplay);
+                                            break;
+                                        case 3:
+                                            for(int j = 0; j < kendrickLamar.length; j++) {
+                                                System.out.println(kendrickLamar[j]);
+                                                }
+                                            System.out.println(""" 
+                        
+                                            =====================
+                                              Spotify-Simulator
+                                            ---------------------
+                                            [      1. Play      ]
+                                            [     2. Return     ]
+                                            [         -         ]
+                                            =====================
+                                            ---------------------
+                                               KENDRICK LAMAR
+                                            =====================
+                                            =====================
+                                            """);
+                                            player.reprodutorArtista(kendrickLamar);
+                                            break;
+                                        case 4:
+                                            for(int j = 0; j < avicii.length; j++) {
+                                                System.out.println(avicii[j]);
+                                                }
+                                            System.out.println(""" 
+                        
+                                            =====================
+                                              Spotify-Simulator
+                                            ---------------------
+                                            [      1. Play      ]
+                                            [     2. Return     ]
+                                            [         -         ]
+                                            =====================
+                                            ---------------------
+                                                   AVICII
+                                            =====================
+                                            =====================
+                                            """);
+                                            player.reprodutorArtista(avicii);
+                                            break;
+                                        case 5:
+                                            for(int j = 0; j < theWanted.length; j++) {
+                                                System.out.println(theWanted[j]);
+                                                }
+                                            System.out.println(""" 
+                        
+                                            =====================
+                                              Spotify-Simulator
+                                            ---------------------
+                                            [      1. Play      ]
+                                            [     2. Return     ]
+                                            [         -         ]
+                                            =====================
+                                            ---------------------
+                                                 THE WANTED
+                                            =====================
+                                            =====================
+                                            """);
+                                            player.reprodutorArtista(theWanted);
+                                            break;
+                                        case 6:
+                                            for(int j = 0; j < maroon5.length; j++) {
+                                                System.out.println(maroon5[j]);
+                                                }
+                                            System.out.println(""" 
+                        
+                                            =====================
+                                              Spotify-Simulator
+                                            ---------------------
+                                            [      1. Play      ]
+                                            [     2. Return     ]
+                                            [         -         ]
+                                            =====================
+                                            ---------------------
+                                                  MAROON 5
+                                            =====================
+                                            =====================
+                                            """);
+                                            player.reprodutorArtista(maroon5);
+                                            break;
+                                        case 7:
+                                            for(int j = 0; j < imagineDragons.length; j++) {
+                                                System.out.println(imagineDragons[j]);
+                                                }
+                                            System.out.println(""" 
+                        
+                                            =====================
+                                              Spotify-Simulator
+                                            ---------------------
+                                            [      1. Play      ]
+                                            [     2. Return     ]
+                                            [         -         ]
+                                            =====================
+                                            ---------------------
+                                               IMAGINE DRAGONS
+                                            =====================
+                                            =====================
+                                            """);
+                                            player.reprodutorArtista(imagineDragons);
+                                            break;
+                                        case 8:
+                                            for(int j = 0; j < seanKingston.length; j++) {
+                                                System.out.println(seanKingston[j]);
+                                                }
+                                            System.out.println(""" 
+                        
+                                            =====================
+                                              Spotify-Simulator
+                                            ---------------------
+                                            [      1. Play      ]
+                                            [     2. Return     ]
+                                            [         -         ]
+                                            =====================
+                                            ---------------------
+                                                SEAN KINGSTON
+                                            =====================
+                                            =====================
+                                            """);
+                                            player.reprodutorArtista(seanKingston);
+                                            break;
+                                        case 9:
+                                            for(int j = 0; j < johnLegend.length; j++) {
+                                                System.out.println(johnLegend[j]);
+                                                }
+                                            System.out.println(""" 
+                        
+                                            =====================
+                                              Spotify-Simulator
+                                            ---------------------
+                                            [      1. Play      ]
+                                            [     2. Return     ]
+                                            [         -         ]
+                                            =====================
+                                            ---------------------
+                                                 JOHN LEGEND
+                                            =====================
+                                            =====================
+                                            """);
+                                            player.reprodutorArtista(johnLegend);
+                                            break;
+                                        case 10:
+                                            for(int j = 0; j < trevorDaniel.length; j++) {
+                                                System.out.println(trevorDaniel[j]);
+                                                }
+                                            System.out.println(""" 
+                        
+                                            =====================
+                                              Spotify-Simulator
+                                            ---------------------
+                                            [      1. Play      ]
+                                            [     2. Return     ]
+                                            [         -         ]
+                                            =====================
+                                            ---------------------
+                                                TREVOR DANIEL
+                                            =====================
+                                            =====================
+                                            """);
+                                            player.reprodutorArtista(trevorDaniel);
+                                            break;
+                                        case 11:
+                                            for(int j = 0; j < oneRepublic.length; j++) {
+                                                System.out.println(oneRepublic[j]);
+                                                }
+                                            System.out.println(""" 
+                        
+                                            =====================
+                                              Spotify-Simulator
+                                            ---------------------
+                                            [      1. Play      ]
+                                            [     2. Return     ]
+                                            [         -         ]
+                                            =====================
+                                            ---------------------
+                                                ONE REPUBLIC
+                                            =====================
+                                            =====================
+                                            """);
+                                            player.reprodutorArtista(oneRepublic);
+                                            break;
+                                        case 12:
+                                            for(int j = 0; j < adele.length; j++) {
+                                                System.out.println(adele[j]);
+                                                }
+                                            System.out.println(""" 
+                        
+                                            =====================
+                                              Spotify-Simulator
+                                            ---------------------
+                                            [      1. Play      ]
+                                            [     2. Return     ]
+                                            [         -         ]
+                                            =====================
+                                            ---------------------
+                                                   ADELE
+                                            =====================
+                                            =====================
+                                            """);
+                                            player.reprodutorArtista(adele);
+                                            break;
+                                        case 13:
+                                            for(int j = 0; j < postMalone.length; j++) {
+                                                System.out.println(postMalone[j]);
+                                                }
+                                            System.out.println(""" 
+                        
+                                            =====================
+                                              Spotify-Simulator
+                                            ---------------------
+                                            [      1. Play      ]
+                                            [     2. Return     ]
+                                            [         -         ]
+                                            =====================
+                                            ---------------------
+                                                 POST MALONE
+                                            =====================
+                                            =====================
+                                            """);
+                                            player.reprodutorArtista(postMalone);
+                                            break;
+                                        case 14:
+                                            for(int j = 0; j < beyonce.length; j++) {
+                                                System.out.println(beyonce[j]);
+                                                }
+                                            System.out.println(""" 
+                        
+                                            =====================
+                                              Spotify-Simulator
+                                            ---------------------
+                                            [      1. Play      ]
+                                            [     2. Return     ]
+                                            [         -         ]
+                                            =====================
+                                            ---------------------
+                                                  BEYONCE
+                                            =====================
+                                            =====================
+                                            """);
+                                            player.reprodutorArtista(beyonce);
+                                            break;
+                                        case 15:
+                                            for(int j = 0; j < theWeeknd.length; j++) {
+                                                System.out.println(theWeeknd[j]);
+                                                }
+                                            System.out.println(""" 
+                        
+                                            =====================
+                                              Spotify-Simulator
+                                            ---------------------
+                                            [      1. Play      ]
+                                            [     2. Return     ]
+                                            [         -         ]
+                                            =====================
+                                            ---------------------
+                                                 THE WEEKND
+                                            =====================
+                                            =====================
+                                            """);
+                                            player.reprodutorArtista(theWeeknd);
+                                            break;
+                                        case 16:
+                                            for(int j = 0; j < mileyCyrus.length; j++) {
+                                                System.out.println(mileyCyrus[j]);
+                                                }
+                                            System.out.println(""" 
+                        
+                                            =====================
+                                              Spotify-Simulator
+                                            ---------------------
+                                            [      1. Play      ]
+                                            [     2. Return     ]
+                                            [         -         ]
+                                            =====================
+                                            ---------------------
+                                                MILEY CYRUS
+                                            =====================
+                                            =====================
+                                            """);
+                                            player.reprodutorArtista(mileyCyrus);
+                                            break;
+                                        case 17:
+                                            for(int j = 0; j < camilaCabello.length; j++) {
+                                                System.out.println(camilaCabello[j]);
+                                                }
+                                            System.out.println(""" 
+                        
+                                            =====================
+                                              Spotify-Simulator
+                                            ---------------------
+                                            [      1. Play      ]
+                                            [     2. Return     ]
+                                            [         -         ]
+                                            =====================
+                                            ---------------------
+                                               CAMILA CABELLO
+                                            =====================
+                                            =====================
+                                            """);
+                                            player.reprodutorArtista(camilaCabello);
+                                            break;
+                                        case 18:
+                                            for(int j = 0; j < katyPerry.length; j++) {
+                                                System.out.println(katyPerry[j]);
+                                                }
+                                            System.out.println(""" 
+                        
+                                            =====================
+                                              Spotify-Simulator
+                                            ---------------------
+                                            [      1. Play      ]
+                                            [     2. Return     ]
+                                            [         -         ]
+                                            =====================
+                                            ---------------------
+                                                 KATY PERRY
+                                            =====================
+                                            =====================
+                                            """);
+                                            player.reprodutorArtista(katyPerry);
+                                            break;
+                                        case 19:
+                                            for(int j = 0; j < nweMelly.length; j++) {
+                                                System.out.println(nweMelly[j]);
+                                                }
+                                            System.out.println(""" 
+                        
+                                            =====================
+                                              Spotify-Simulator
+                                            ---------------------
+                                            [      1. Play      ]
+                                            [     2. Return     ]
+                                            [         -         ]
+                                            =====================
+                                            ---------------------
+                                                  NWE MELLY
+                                            =====================
+                                            =====================
+                                            """);
+                                            player.reprodutorArtista(nweMelly);
+                                            break;
+                                        case 20:
+                                            for(int j = 0; j < tylerTheCreator.length; j++) {
+                                                System.out.println(tylerTheCreator[j]);
+                                                }
+                                            System.out.println(""" 
+                        
+                                            =====================
+                                              Spotify-Simulator
+                                            ---------------------
+                                            [      1. Play      ]
+                                            [     2. Return     ]
+                                            [         -         ]
+                                            =====================
+                                            ---------------------
+                                              TYLER THE CREATOR
+                                            =====================
+                                            =====================
+                                            """);
+                                            player.reprodutorArtista(tylerTheCreator);
+                                            break;
+                                        case 21:
+                                            for(int j = 0; j < kanyeWest.length; j++) {
+                                                System.out.println(kanyeWest[j]);
+                                                }
+                                            System.out.println(""" 
+                        
+                                            =====================
+                                              Spotify-Simulator
+                                            ---------------------
+                                            [      1. Play      ]
+                                            [     2. Return     ]
+                                            [         -         ]
+                                            =====================
+                                            ---------------------
+                                                 KANYE WEST
+                                            =====================
+                                            =====================
+                                            """);
+                                            player.reprodutorArtista(kanyeWest);
+                                            break;
+                                        case 22:
+                                            for(int j = 0; j < centralCee.length; j++) {
+                                                System.out.println(centralCee[j]);
+                                                }
+                                            System.out.println(""" 
+                        
+                                            =====================
+                                              Spotify-Simulator
+                                            ---------------------
+                                            [      1. Play      ]
+                                            [     2. Return     ]
+                                            [         -         ]
+                                            =====================
+                                            ---------------------
+                                                 CENTRAL CEE
+                                            =====================
+                                            =====================
+                                            """);
+                                            player.reprodutorArtista(centralCee);
+                                            break;
+                                        case 23:
+                                            for(int j = 0; j < eminem.length; j++) {
+                                                System.out.println(eminem[j]);
+                                                }
+                                            System.out.println(""" 
+                        
+                                            =====================
+                                              Spotify-Simulator
+                                            ---------------------
+                                            [      1. Play      ]
+                                            [     2. Return     ]
+                                            [         -         ]
+                                            =====================
+                                            ---------------------
+                                                   EMINEM
+                                            =====================
+                                            =====================
+                                            """);
+                                            player.reprodutorArtista(eminem);
+                                            break;
+                                        case 24:
+                                            for(int j = 0; j < xxxtentacion.length; j++) {
+                                                System.out.println(xxxtentacion[j]);
+                                                }
+                                            System.out.println(""" 
+                        
+                                            =====================
+                                              Spotify-Simulator
+                                            ---------------------
+                                            [      1. Play      ]
+                                            [     2. Return     ]
+                                            [         -         ]
+                                            =====================
+                                            ---------------------
+                                                XXXTENTACION
+                                            =====================
+                                            =====================
+                                            """);
+                                            player.reprodutorArtista(xxxtentacion);
+                                            break;
+                                        case 25:
+                                            for(int j = 0; j < roddyRich.length; j++) {
+                                                System.out.println(roddyRich[j]);
+                                                }
+                                            System.out.println(""" 
+                        
+                                            =====================
+                                              Spotify-Simulator
+                                            ---------------------
+                                            [      1. Play      ]
+                                            [     2. Return     ]
+                                            [         -         ]
+                                            =====================
+                                            ---------------------
+                                                 RODDY RICH
+                                            =====================
+                                            =====================
+                                            """);
+                                            player.reprodutorArtista(roddyRich);
+                                            break;
                                     }
                                 }
-                                if(y == 0) {
-                                System.out.println("Sorry, this song is not in your library.");   
-                                }
-                                break;
-                            case 2:
-                                //return
-                                break;
-                        }
-                        break;
-                    case 2:
-                        System.out.println(""" 
-                        \f
-                        =====================
-                          Spotify-Simulator
-                        ---------------------
-                        [   1. An Evening   ]
-                        [   2. Parachutes   ]
-                        [   3. Astroworld   ]
-                        [     4. Damn       ]
-                        =====================
-                        ---------------------
-                             MY LIBRARY
-                        =====================
-                        =====================
-                        """);
-                        opcao = leitor.nextInt();
-                        int x = 0;
-                        switch(opcao) {
-                            case 1:
-                                x = 0;
-                                System.out.println("Now playing " + bm[x]);    
-                                break;
-                            case 2:
-                                x = 0;
-                                System.out.println("Now playing " + cp[x]);    
-                                break;
-                            case 3:
-                                x = 0;
-                                System.out.println("Now playing " + ts[x]);
-                                break;
-                            case 4:    
-                                x = 0;
-                                System.out.println("Now playing " + kl[x]);
-                                break;
-                        }
-                        /*if(pesq.equalsIgnoreCase("An Evening")) {
+                            }
+                            if(z == 0) {
+                                System.out.println("Sorry, Spotify is not connected to the Internet.");
+                            }
+                            opcao = 0;
+                            break;
+                    }
+                    break;
+                case 2:
+                    System.out.println(""" 
+                    \f
+                    =====================
+                        Spotify-Simulator
+                    ---------------------
+                    [     1. Songs      ]
+                    [     2. Albums     ]
+                    [    3. Playlists   ]
+                    =====================
+                    ---------------------
+                         MY LIBRARY
+                    =====================
+                    =====================
+                    """);
+                    opcao = leitor.nextInt();
+                    switch(opcao) {
+                        case 1:
+                            for(int i = 0; i < song.length; i++) {
+                                System.out.println(song[i]);
+                            }
+                            System.out.println(""" 
+                        
+                            =====================
+                              Spotify-Simulator
+                            ---------------------
+                            [      1. Play      ]
+                            [     2. Return     ]
+                            [         -         ]
+                            =====================
+                            ---------------------
+                                 MY LIBRARY
+                            =====================
+                            =====================
+                            """);
+                            opcao = leitor.nextInt();
+                            switch(opcao) {
+                                case 1:
+                                    for(int i = 0; i < song.length; i++) {
+                                    System.out.println(song[i]);
+                                    }
+                                    System.out.println("Which one?");
+                                    leitor.nextLine();
+                                    pesq = leitor.nextLine();
+                                    int y = 0;
+                                    for(int i = 0; i < song.length; i++) {
+                                        if(pesq.equalsIgnoreCase(song[i])) {
+                                            y++;
+                                            player.reprodutor(song, i);
+                                        }
+                                    }
+                                    if(y == 0) {
+                                    System.out.println("Sorry, this song is not in your library.");   
+                                    }
+                                    break;
+                                case 2:
+                                    opcao = 0;
+                                    //return
+                                    break;
+                            }
+                            break;
+                        case 2:
+                            System.out.println(""" 
+                            \f
+                            =====================
+                              Spotify-Simulator
+                            ---------------------
+                            [   1. An Evening   ]
+                            [   2. Parachutes   ]
+                            [   3. Astroworld   ]
+                            [     4. Damn       ]
+                            =====================
+                            ---------------------
+                                 MY LIBRARY
+                            =====================
+                            =====================
+                            """);
+                            opcao = leitor.nextInt();
                             int x = 0;
-                            System.out.println("Now playing " + bm[x]);
-                        } else if(pesq.equalsIgnoreCase("Parachutes")) {
-                            int x = 0;
-                            System.out.println("Now playing " + cp[x]);
-                        } else if(pesq.equalsIgnoreCase("Astroworld")) {
-                            int x = 0;
-                            System.out.println("Now playing " + ts[x]);
-                        } else if(pesq.equalsIgnoreCase("Damn")) {
-                            int x = 0;
-                            System.out.println("Now playing " + kl[x]);
-                        } else {
-                            System.out.println("Sorry, Spotify is not connected to the Internert.");
-                                break;
-                        }*/
-                        break;
-                    case 3:
-                        System.out.println(""" 
-                        \f
-                        =====================
-                          Spotify-Simulator
-                        ---------------------
-                        [  1. Liked Songs   ]
-                        [     2. Create     ]
-                        [     3. Return     ]
-                        =====================
-                        ---------------------
-                           YOUR PLAYLISTS
-                        =====================
-                        =====================
-                        """);
-                        opcao = leitor.nextInt();
-                        int w = 0;
-                        switch(opcao) {
-                            case 1:
-                                for(int i = 0; i < likedsongs.length; i++) {
-                                    System.out.println(likedsongs[i]);
-                                }
-                                System.out.println(""" 
-                                
-                                =====================
-                                  Spotify-Simulator
-                                ---------------------
-                                [      1. Play      ]
-                                [     2. Return     ]
-                                [         -         ]
-                                =====================
-                                ---------------------
-                                     MY LIBRARY
-                                =====================
-                                =====================
-                                """);
-                                opcao = leitor.nextInt();
-                                switch(opcao) {
-                                    case 1:
-                                        System.out.println("Now playing " + likedsongs[w]);
-                                        break;
-                                    case 2:
-                                        //return
-                                        break;
-                                }
-                                break;
-                            case 2:
-                                myplay = playlist.playlistcreator();
-                                System.out.println(""" 
-                                \f
-                                =====================
-                                  Spotify-Simulator
-                                ---------------------
-                                [  1. Liked Songs   ]
-                                [ 2. My Playlist #1 ]
-                                [     3. Return     ]
-                                =====================
-                                ---------------------
-                                   YOUR PLAYLISTS
-                                =====================
-                                =====================
-                                """);
-                                opcao = leitor.nextInt();
-                                switch(opcao) {
-                                    case 1:
-                                        System.out.println("\fNow playing " + likedsongs[w]);
-                                        break;
-                                    case 2:
-                                        System.out.println("\fNow playing " + myplay[w]);
-                                        break;
-                                    case 3:
-                                        //return
-                                        break;
-                                }
-                                break;
-                            case 3:
-                                //return
-                                break;
-                        }
-                        break;
-                }
-                break;
-            case 3:
-                //close
-                break;
+                            switch(opcao) {
+                                case 1:
+                                    x = 0;
+                                    player.reprodutor(bm, x);    
+                                    break;
+                                case 2:
+                                    x = 0;
+                                    player.reprodutor(cp, x);  
+                                    break;
+                                case 3:
+                                    x = 0;
+                                    player.reprodutor(ts, x);
+                                    break;
+                                case 4:    
+                                    x = 0;
+                                    player.reprodutor(kl, x);
+                                    break;
+                            }
+                            break;
+                        case 3:
+                            System.out.println(""" 
+                            \f
+                            =====================
+                              Spotify-Simulator
+                            ---------------------
+                            [  1. Liked Songs   ]
+                            [     2. Create     ]
+                            [     3. Return     ]
+                            =====================
+                            ---------------------
+                               YOUR PLAYLISTS
+                             =====================
+                            =====================
+                             """);
+                            opcao = leitor.nextInt();
+                            int w = 0;
+                            switch(opcao) {
+                                case 1:
+                                    for(int i = 0; i < likedsongs.length; i++) {
+                                        System.out.println(likedsongs[i]);
+                                    }
+                                    System.out.println(""" 
+                                    
+                                    =====================
+                                      Spotify-Simulator
+                                    ---------------------
+                                    [      1. Play      ]
+                                    [     2. Return     ]
+                                    [         -         ]
+                                    =====================
+                                    ---------------------
+                                         LIKED SONGS
+                                    =====================
+                                    =====================
+                                    """);
+                                    opcao = leitor.nextInt();
+                                    switch(opcao) {
+                                        case 1:
+                                            player.reprodutor(likedsongs, w);
+                                            break;
+                                        case 2:
+                                            opcao = 0;
+                                            //return
+                                            break;
+                                    }
+                                    break;
+                                case 2:
+                                    myplay = playlist.playlistcreator();
+                                    System.out.println(""" 
+                                    \f
+                                    =====================
+                                      Spotify-Simulator
+                                    ---------------------
+                                    [  1. Liked Songs   ]
+                                    [ 2. My Playlist #1 ]
+                                    [     3. Return     ]
+                                    =====================
+                                    ---------------------
+                                       YOUR PLAYLISTS
+                                    =====================
+                                    =====================
+                                    """);
+                                    opcao = leitor.nextInt();
+                                    switch(opcao) {
+                                        case 1:
+                                            player.reprodutor(likedsongs, w);
+                                            break;
+                                        case 2:
+                                            player.reprodutor(myplay, w);
+                                            break;
+                                          case 3:
+                                            opcao = 0;
+                                            //return
+                                            break;
+                                    }
+                                    break;
+                                case 3:
+                                    opcao = 0;
+                                    //return
+                                    break;
+                            }
+                            break;
+                    }
+                    break;
+                case 3:
+                    System.out.println("\fSpotify-Simulator closed");
+                    //close
+                    break;
+            }
         }
     }
 }
