@@ -1,0 +1,342 @@
+public class Artist {
+    
+    public String[] artlist() {
+        
+        String[] artistas = new String[26];
+        
+        artistas[0] = "Travis Scott";
+        artistas[1] = "Bruno Mars";
+        artistas[2] = "Coldplay";
+        artistas[3] = "Kendrick Lamar";
+        artistas[4] = "Avicii";
+        artistas[5] = "The Wanted";
+        artistas[6] = "Maroon 5";
+        artistas[7] = "Imagine Dragons";
+        artistas[8] = "Sean Kingston";
+        artistas[9] = "John Legend";
+        artistas[10] = "Trevor Daniel";
+        artistas[11] = "One Republic";
+        artistas[12] = "Adele";
+        artistas[13] = "Post Malone";
+        artistas[14] = "Beyonce";
+        artistas[15] = "The Weeknd";
+        artistas[16] = "Miley Cyrus";
+        artistas[17] = "Camila Cabello";
+        artistas[18] = "Katy Perry";
+        artistas[19] = "NWE Melly";
+        artistas[20] = "Tyler The Creator";
+        artistas[21] = "Kanye West";
+        artistas[22] = "Central Cee";
+        artistas[23] = "Eminem";
+        artistas[24] = "XXXTentacion";
+        artistas[25] = "Roddy Rich";
+         
+        return artistas;
+    }
+    
+    public String[] travisScott() {
+        
+        String[] travisScottSongs = {
+        "AstroThunder",
+        "Butterfly Effect",
+        "Can't Say",
+        "Carousel",
+        "Coffee Bean",
+        "Houstonfornication",
+        "NC-17",
+        "No Bystanders",
+        "R.I.P. Screw",
+        "Stargazing",
+        "Skeletons",
+        "Sicko Mode",
+        "Stop Trying To Be God",
+        "Wake Up",
+        "Who? What!",
+        "Yosemite",
+        "5% Tint"
+        };
+    
+        return travisScottSongs;
+    }
+
+    public String[] brunoMars() {
+            
+        String[] brunoMarsSongs = {
+        "After last Night",
+        "Billionaire",
+        "Blast Off",
+        "Count on Me",
+        "Fly As Me",
+        "Leave The Door Open",
+        "Locked out of Heaven",
+        "Love's Train",
+        "Put On A Smile",
+        "Silk Sonic Intro",
+        "Smokin Out The Window",
+        "Skate",
+        "The Lazy Song",
+        "When I Was Your Man",
+        "777"
+        };
+        
+        return brunoMarsSongs;
+    }
+
+    public String[] coldplay() {
+        String[] coldplaySongs = {
+        "Don't Panic",
+        "Everything's Not Lost",
+        "High Speed",
+        "Parachutes",
+        "Paradise",
+        "Shiver",
+        "Sparks",
+        "Spies",
+        "The Scientist",
+        "Trouble",
+        "Viva La Vida",
+        "We Never Change",
+        "Yellow"
+        };
+        return coldplaySongs;
+    }
+
+    public String[] kendrickLamar() {
+        String[] kendrickLamarSongs = {
+        "Blood",
+        "DNA",
+        "Duckworth",
+        "Element",
+        "Fear",
+        "Feel",
+        "God",
+        "Humble",
+        "Love",
+        "Loyalty",
+        "Lust",
+        "Pride",
+        "XXX",
+        "Yah"
+        };
+        return kendrickLamarSongs;
+    }
+
+    public String[] avicii() {
+        
+        String[] aviciiSongs = {
+        "Hey Brother",
+        "The Nights",
+        "Waiting For Love",
+        "Wake Me Up"
+        };
+        
+        return aviciiSongs;
+    }
+
+    public String[] theWanted() {
+        
+        String[] wantedSongs = {
+        "Glad You Came"
+        };
+        
+        return wantedSongs;
+    }
+
+    public String[] maroon5() {
+        
+        String[] maroon5Songs = {
+        "Animals",
+        "Girls Like You",
+        "Payphone",
+        "Sugar"
+        };
+        
+        return maroon5Songs;
+    }
+
+    public String[] imagineDragons() {
+        
+        String[] imagineDragonsSongs = {
+        "Believer",
+        "Demons",
+        "Sweather Weather"
+        };
+        
+        return imagineDragonsSongs;
+    }
+
+    public String[] seanKingston() {
+        
+        String[] seanKingstonSongs = {
+        "Beautiful Girls"
+        };
+        
+        return seanKingstonSongs;
+    }
+
+    public String[] oneRepublic() {
+        
+        String[] oneRepublicSongs = {
+        "Counting Stars"
+        };
+
+        return oneRepublicSongs;
+    }
+
+    public String[] johnLegend() {
+        
+        String[] johnLegendSongs = {
+        "All Of Me"
+        };
+        
+        return johnLegendSongs;
+    }
+
+    public String[] trevorDaniel() {
+        
+        String[] trevorDanielSongs = {
+        "Falling"
+        };
+        
+        return trevorDanielSongs;
+    }
+
+    public String[] adele() {
+        
+        String[] adeleSongs = {
+        "Rolling in the Deep"
+        };
+        
+        return adeleSongs;
+    }
+
+    public String[] postMalone() {
+        
+        String[] postMaloneSongs = {
+        "Better Now",
+        "Chemical",
+        "Circles",
+        "Congratulations",
+        "Hollywood's Bleeding",
+        "Rockstar",
+        "Sunflower"
+        };
+        
+        return postMaloneSongs;
+    }
+
+    public String[] beyonce() {
+        
+        String[] beyonceSongs = {
+        "Halo"
+        };
+        
+        return beyonceSongs;
+    }
+
+    public String[] theWeeknd() {
+        
+        String[] theWeekndSongs = {
+        "Die For You",
+        "Save Your Tears"
+        };
+        
+        return theWeekndSongs;
+    }
+
+    public String[] mileyCyrus() {
+        
+        String[] mileyCyrusSongs = {
+        "Flowers"
+        };
+        
+        return mileyCyrusSongs;
+    }
+
+    public String[] camilaCabello() {
+        
+        String[] camilaCabelloSongs = {
+        "Havana",
+        "Senorita"
+        };
+        
+        return camilaCabelloSongs;
+    }
+
+    public String[] katyPerry() {
+        
+        String[] katyPerrySongs = {
+        "Firework"
+        };
+        
+        return katyPerrySongs;
+    }
+
+    public String[] nweMelly() {
+        
+        String[] nweMellySongs = {
+        "Murder On My Mind"
+        };
+        
+        return nweMellySongs;
+    }
+
+    public String[] tylerTheCreator() {
+        
+        String[] tylerTheCreatorSongs = {
+        "See You Again"
+        };
+        
+        return tylerTheCreatorSongs;
+    }
+
+    public String[] kanyeWest() {
+        
+        String[] kanyeWestSongs = {
+        "Heartless"
+        };
+        
+        return kanyeWestSongs;
+    }
+
+    public String[] centralCee() {
+        
+        String[] centralCeeSongs = {
+        "Chapters",
+        "Let Go"
+        };
+        
+        return centralCeeSongs;
+    }
+
+    public String[] eminem() {
+        
+        String[] eminemSongs = {
+        "Lose Yourself",
+        "Never Love Again"
+        };
+        
+        return eminemSongs;
+    }
+
+    public String[] xxxtentacion() {
+        
+        String[] xxxtentacionSongs = {
+        "Changes",
+        "Hope",
+        "Moonlight"
+        };
+        
+        return xxxtentacionSongs;
+    }
+
+    public String[] roddyRich() {
+        
+        String[] roddyRichSongs = {
+        "Ballin"
+        };
+        
+        return roddyRichSongs;
+    }
+
+}
