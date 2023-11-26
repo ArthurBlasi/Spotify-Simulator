@@ -1,0 +1,113 @@
+public class BancoDeMusicas {
+    
+    public String[] bdmcreator() {
+        
+        String[] bdm = new String[100];
+        
+        bdm[0] = "The Nights";
+        bdm[1] = "Glad You Came";
+        bdm[2] = "When I Was Your Man";
+        bdm[3] = "Locked out of Heaven";
+        bdm[4] = "Girls Like You";
+        bdm[5] = "Sweather Weather";
+        bdm[6] = "Wake Me Up";
+        bdm[7] = "Sugar";
+        bdm[8] = "Viva La Vida";
+        bdm[9] = "Billionaire";
+        bdm[10] = "Believer";
+        bdm[11] = "Waiting For Love";
+        bdm[12] = "Paradise";
+        bdm[13] = "The Scientist";
+        bdm[14] = "Animals";
+        bdm[15] = "Hey Brother";
+        bdm[16] = "Beautiful Girls";
+        bdm[17] = "Counting Stars";
+        bdm[18] = "The Lazy Song";
+        bdm[19] = "Demons";
+        bdm[20] = "All of Me";
+        bdm[21] = "Count on Me";
+        bdm[22] = "Falling";
+        bdm[23] = "Rolling in the Deep";
+        bdm[24] = "Sunflower";
+        bdm[25] = "Congratulations";
+        bdm[26] = "Better Now";
+        bdm[27] = "Payphone";
+        bdm[28] = "Circles";
+        bdm[29] = "Halo";
+        bdm[30] = "Save Your Tears";
+        bdm[31] = "Die For You";
+        bdm[32] = "Flowers";
+        bdm[33] = "Senorita";
+        bdm[34] = "Havana";
+        bdm[35] = "Firework";
+        bdm[36] = "Murder on My Mind";
+        bdm[37] = "See You Again";
+        bdm[38] = "Heartless";
+        bdm[39] = "Rockstar";
+        bdm[40] = "Hollywood's Bleeding";
+        bdm[41] = "Chemical";
+        bdm[42] = "Let Go";
+        bdm[43] = "Lose Yourself";
+        bdm[44] = "Never Love Again";
+        bdm[45] = "Hope";
+        bdm[46] = "Moonlight";
+        bdm[47] = "Ballin";
+        bdm[48] = "Chapters";
+        bdm[49] = "Changes";
+        bdm[50] = "Duckworth";
+        bdm[51] = "God";
+        bdm[52] = "Fear";
+        bdm[53] = "XXX";
+        bdm[54] = "Love";
+        bdm[55] = "Lust";
+        bdm[56] = "Humble";
+        bdm[57] = "Pride";
+        bdm[58] = "Loyalty";
+        bdm[59] = "Feel";
+        bdm[60] = "Element";
+        bdm[61] = "Yah";
+        bdm[62] = "DNA";
+        bdm[63] = "Blood";
+        bdm[64] = "Coffee Bean";
+        bdm[65] = "Houstonfornication";
+        bdm[66] = "Butterfly Effect";
+        bdm[67] = "Who? What!";
+        bdm[68] = "Can´t Say";
+        bdm[69] = "Yosemite";
+        bdm[70] = "Astrothunder";
+        bdm[70] = "NC-17";
+        bdm[71] = "5% Tint";
+        bdm[72] = "Wake Up";
+        bdm[73] = "Skeletons";
+        bdm[74] = "No Bystanders";
+        bdm[75] = "Stop Trying To Be God";
+        bdm[76] = "R.I.P. Screw";
+        bdm[77] = "Sicko Mode";
+        bdm[78] = "Carousel";
+        bdm[79] = "Stargazing";
+        bdm[80] = "Everything's Not Lost";
+        bdm[81] = "We Never Change";
+        bdm[82] = "High Speed";
+        bdm[83] = "Parachutes";
+        bdm[84] = "Trouble";
+        bdm[85] = "Yellow";
+        bdm[86] = "Sparks";
+        bdm[87] = "Spies";
+        bdm[88] = "Shiver";
+        bdm[89] = "Don't Panic";
+        bdm[90] = "Blast Off";
+        bdm[91] = "Love's Train";
+        bdm[92] = "Skate";
+        bdm[93] = "777";
+        bdm[94] = "Put On A Smile";
+        bdm[95] = "Smokin Out The Window";
+        bdm[96] = "After Last Night";
+        bdm[97] = "Fly As Me";
+        bdm[98] = "Leave The Door Open";
+        bdm[99] = "Silk Sonic Intro";
+        
+        return bdm;
+      
+    }
+    
+}
