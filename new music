@@ -1,0 +1,103 @@
+import java.util.Scanner;
+
+public class Music {
+    
+    Scanner leitor = new Scanner(System.in);
+    
+    BancoDeMusicas banco = new BancoDeMusicas();
+    String[] musica = banco.bdmcreator();
+    
+    int opcao = 0;
+    
+    public void reprodutor(String[] msc, int i) {
+          
+        while(opcao != 4) {
+            
+            System.out.println("\fNow playing: " + msc[i]);
+        
+            System.out.println("""
+            [      1.Pause      ]
+            [   2.Next song     ]
+            [  3.Previous song  ]
+            [      4.Stop       ]
+            """);
+            
+            opcao = leitor.nextInt();
+            
+            switch(opcao) {
+                case 1:
+                    System.out.print("\fMusic paused");
+                    System.out.println("""
+                
+                    [     1.Continue    ]
+                    [   2.Next song     ]
+                    [  3.Previous song  ]
+                    [      4.Stop       ]
+                    """);
+                    opcao = leitor.nextInt();
+                    break;
+                case 2:
+                i++;
+                if(i == msc.length) {
+                    i = 0;
+                }
+                System.out.println("\fNow playing: " + msc[i]);
+                
+                System.out.println("""
+                [      1.Pause      ]
+                [   2.Next song     ]
+                [  3.Previous song  ]
+                [      4.Stop       ]
+                """);
+                    break;
+                case 3:
+                i--;
+                if(i == -1) {
+                    i = msc.length - 1;
+                }
+                System.out.println("\fNow playing: " + msc[i]);
+                System.out.println("""
+                [      1.Pause      ]
+                [   2.Next song     ]
+                [  3.Previous song  ]
+                [      4.Stop       ]
+                """);
+                    break;
+                case 4:
+                    //return;
+                    break;
+            }
+        }
+    }
+    
+    public void reprodutorArtista(String[] art) {
+            
+        String pesq;
+        
+        opcao = leitor.nextInt();
+        switch(opcao) {
+            case 1:
+                for(int k = 0; k < art.length; k++) {  
+                    System.out.println(art[k]);
+                }
+                System.out.println("Which one?");
+                leitor.nextLine();
+                pesq = leitor.nextLine();
+                int v = 0;
+                for(int l = 0; l < art.length; l++) {
+                    if(pesq.equalsIgnoreCase(art[l])) {
+                        v++;
+                        reprodutor(art, l);
+                    }
+                }
+                if(v == 0) {
+                    System.out.println("Sorry, this song is not in your library.");   
+                }
+                break;
+            case 2:
+                 opcao = 0;
+                 //return
+               break;
+        }
+    }
+}
